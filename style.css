@@ -1,0 +1,52 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather' ,sans-serif;
+  background: #121212;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.description {
+  font-size: 0.8em;
+  font-weight: lighter;
+  padding: 0 8%;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+.container-social {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.box-social {
+  opacity: 0.5;
+  transition: all 0.25s ease;
+}
+.box-social:hover {
+  opacity: 1;
+}
