@@ -1,0 +1,23 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/brunooomelo/personal-site.git",
+  "author": "Bruno Melo <bxdmelo@marfrig.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.14",
+    "typescript": "^4.3.5"
+  }
+}
