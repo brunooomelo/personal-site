@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:preview": "yarn build && yarn start",
     "start": "next start",
     "lint": "next lint"
   },
