@@ -1,5 +1,6 @@
 # Personal site
 
 ### Stack
-- HTML5 
+
+- HTML5
 - CSS3
