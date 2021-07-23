@@ -1,3 +1,10 @@
+import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si'
+
+const IconProps = {
+  size: 48,
+  color: '#fff',
+}
+
 const HomePage = () => (
   <div className="container">
     <div className="title">bruno melo</div>
@@ -11,7 +18,7 @@ const HomePage = () => (
         className="box-social"
         rel="noreferrer"
       >
-        <i className="fab fa-github fa-3x"></i>
+        <SiGithub {...IconProps} />
       </a>
       <a
         href="https://www.linkedin.com/in/brunooomelo/"
@@ -19,7 +26,7 @@ const HomePage = () => (
         className="box-social"
         rel="noreferrer"
       >
-        <i className="fab fa-linkedin-in fa-3x"></i>
+        <SiLinkedin {...IconProps} />
       </a>
       <a
         href="https://twitter.com/brunooomelo"
@@ -27,7 +34,7 @@ const HomePage = () => (
         className="box-social"
         rel="noreferrer"
       >
-        <i className="fab fa-twitter fa-3x"></i>
+        <SiTwitter {...IconProps} />
       </a>
     </div>
   </div>
