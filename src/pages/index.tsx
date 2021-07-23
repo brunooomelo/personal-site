@@ -17,6 +17,7 @@ const HomePage = () => (
         target="_blank"
         className="box-social"
         rel="noreferrer"
+        aria-label="Github"
       >
         <SiGithub {...IconProps} />
       </a>
@@ -25,6 +26,7 @@ const HomePage = () => (
         target="_blank"
         className="box-social"
         rel="noreferrer"
+        aria-label="LinkedIn"
       >
         <SiLinkedin {...IconProps} />
       </a>
@@ -33,6 +35,7 @@ const HomePage = () => (
         target="_blank"
         className="box-social"
         rel="noreferrer"
+        aria-label="Twitter"
       >
         <SiTwitter {...IconProps} />
       </a>

@@ -10,5 +10,4 @@ module.exports = withPWA({
     domains: ['localhost'],
   },
   webpack5: true,
-  optimizeFonts: false,
 })
