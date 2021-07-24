@@ -3,7 +3,8 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Inspect from 'inspx'
 
-const isProd = process.env.NODE_ENV === 'production'
+const isProd =
+  process.env.PREVIEW != 'true' || process.env.NODE_ENV === 'production'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
