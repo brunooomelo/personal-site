@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/brunooomelo/personal-site.git",
-  "author": "Bruno Melo <bxdmelo@marfrig.com.br>",
+  "author": "Bruno Melo <utibmelo@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
