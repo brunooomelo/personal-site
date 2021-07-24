@@ -10,4 +10,7 @@ module.exports = withPWA({
     domains: ['localhost'],
   },
   webpack5: true,
+  env: {
+    PREVIEW: process.env.PREVIEw,
+  },
 })
