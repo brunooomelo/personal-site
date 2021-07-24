@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Inspect from 'inspx'
 
 const isProd =
-  process.env.PREVIEW != 'true' || process.env.NODE_ENV === 'production'
+  process.env.PREVIEW != 'true' && process.env.NODE_ENV === 'production'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
