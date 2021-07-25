@@ -11,6 +11,6 @@ module.exports = withPWA({
   },
   webpack5: true,
   env: {
-    PREVIEW: process.env.PREVIEw,
+    PREVIEW: process.env.PREVIEW,
   },
 })
