@@ -3,12 +3,11 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Inspect from 'inspx'
 
-const isProd =
-  process.env.PREVIEW != 'true' && process.env.NODE_ENV === 'production'
+const isPreview = process.env.PREVIEW == 'true'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Inspect disabled={isProd}>
+    <Inspect disabled={!isPreview}>
       <Head>
         <title>brunooomelo - JS DEVELOPER</title>
         <link rel="shortcut icon" href="/image/icon-512.png" />
