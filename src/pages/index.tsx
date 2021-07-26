@@ -9,7 +9,7 @@ const HomePage = () => (
   <div className="container">
     <div className="title">bruno melo</div>
     <div className="description">
-      Javascript Developer and other awesome things.
+	Desenvolvedor Javascript e outras coisas legais.
     </div>
     <div className="container-social">
       <a
