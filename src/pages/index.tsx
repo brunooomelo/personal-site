@@ -9,7 +9,7 @@ const IconProps = {
 const HomePage = () => (
   <div className="container">
     <header className="header">
-      <Link href="/" locale="en">
+      <Link href="/en" locale="en">
         <a className="btn-translate">en</a>
       </Link>
     </header>
