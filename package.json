@@ -6,7 +6,7 @@
   "author": "Bruno Melo <utibmelo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "PREVIEW=true next dev",
     "build": "next build",
     "build:preview": "yarn build && yarn start",
     "start": "next start",

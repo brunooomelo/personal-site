@@ -9,14 +9,14 @@ const IconProps = {
 const HomePage = () => (
   <div className="container">
     <header className="header">
-      <Link href="/" locale="en">
-        <a className="btn-translate">en</a>
+      <Link href="/" locale="pt-br">
+        <a className="btn-translate">pt</a>
       </Link>
     </header>
     <div className="content">
       <div className="title">bruno melo</div>
       <div className="description">
-        Desenvolvedor Javascript e outras coisas legais.
+        Javascript Developer and other awesome things.
       </div>
       <div className="container-social">
         <a
