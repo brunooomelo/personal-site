@@ -5,10 +5,22 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Merriweather", sans-serif;
-  background: #121212;
-  color: #fff;
 }
 
+body {
+  background-color: #F5F8F8;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background-color .5s ease;
+  color: #3f3f4c;
+  width: 100%;
+}
+
+body.dark {
+  color: #a5abb0;
+  background-color: #3f3f4c;
+}
 a {
   text-decoration: none;
   padding: 5px 10px;
@@ -29,8 +41,10 @@ a {
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: flex-end;
+  height: 50px;
 }
 
 .btn-translate {
@@ -42,9 +56,11 @@ a {
   font-weight: bold;
   letter-spacing: 3px;
   text-transform: uppercase;
+  color:#a5abb0;
+}
+.title.dark {
   color: #fff;
 }
-
 .description {
   font-size: 0.8em;
   font-weight: lighter;
@@ -52,7 +68,11 @@ a {
   margin-top: 10px;
   text-align: center;
   letter-spacing: 2px;
+  color:#a5abb0;
+}
+.dark .description {
   opacity: 0.5;
+  color: #fff;
 }
 
 .container-social {
@@ -66,17 +86,13 @@ a {
   opacity: 0.5;
   transition: all 0.25s ease;
 }
-.box-social.box-solid {
-  padding: 8px 16px;
-  background: white;
-  color: #121212;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 18px;
-  max-width: 200px;
-  border-radius: 5px;
+.box-social > svg {
+  color: #3f3f4c !important;
 }
+.dark .box-social > svg {
+  color: #fff !important;
+}
+
 .box-social:hover {
   opacity: 1;
 }
@@ -87,9 +103,9 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-  .header {
+  /* .header {
     justify-content: center;
-  }
+  } */
 }
 @media (min-width: 991px) and (max-width: 1599px) {
   .title {
@@ -134,4 +150,65 @@ a {
   .container-social {
     width: 30%;
   }
+}
+
+#sun-moon {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f5f8f8;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color .5s ease;
+}
+
+#sun-moon:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  background: #A5ABB0;
+  transition: border-radius .5s ease, background-color .5s ease, width .5s ease, transform .5s ease;
+}
+
+#sun-moon:after {
+  content: "";
+  white-space: nowrap;
+  text-indent: 60px;
+  line-height: 45px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #f5f8f8;
+  box-shadow: 0 0 0 0 #f5f8f8, 0 0 0 3px #a5abb0, 0 0 0 100px #f5f8f8;
+  box-sizing: border-box;
+  transition: border-color .5s ease,box-shadow .5s ease;
+}
+
+body.dark #sun-moon {
+  background-color: #a5abb0;
+}
+
+body.dark #sun-moon:before {
+  background: #3f3f4c;
+  border-radius: 50%;
+  width: 150%;
+  transform: translate(-5%,-35%) rotate(-25deg);
+}
+
+body.dark #sun-moon:after {
+  content: "";
+  box-shadow: 0 0 0 0 #3f3f4c, 0 0 0 0 #3f3f4c, 0 0 0 3px #a5abb0, 0 0 0 100px #3f3f4c;
+  border-color: #3f3f4c;
 }
