@@ -4,6 +4,7 @@ import '../styles/style.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Inspect from 'inspx'
+import { ThemeProvider } from '../context/ThemeProvider'
 
 const isPreview = process.env.PREVIEW == 'true'
 
@@ -21,7 +22,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="The best personal portfolio in the world!"
         />
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </Inspect>
   )
 }

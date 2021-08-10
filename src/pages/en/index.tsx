@@ -2,33 +2,18 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si'
 import { AnchorIcon } from '../../common/AnchorIcon'
+import { useTheme } from '../../hook/useTheme'
+import { DarkModeButton } from '../../common/DarkModeButton'
+import { Header } from '../../common/Header'
 
 const IconProps = {
   size: 48,
   color: '#fff',
 }
 const HomePage = () => {
-  const toggle = () => {
-    document.getElementsByTagName('body')[0]?.classList.toggle('dark')
-  }
   return (
     <div className="container">
-      <header className="header">
-        <Link href="/" locale="pt" passHref>
-          <motion.a
-            initial={{ opacity: 0, y: 100, scale: 1.5 }}
-            animate={{ opacity: 0.8, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 0 }}
-            transition={{ duration: 1 }}
-            whileHover={{ opacity: 1, scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="btn-translate"
-          >
-            pt
-          </motion.a>
-        </Link>
-        <div id="sun-moon" onClick={toggle} />
-      </header>
+      <Header hrefName="PT" href="/" locale="pt" />
       <div className="content">
         <motion.div
           className="title"
