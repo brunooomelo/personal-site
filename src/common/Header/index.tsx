@@ -12,7 +12,7 @@ type HeaderProps = {
 export function Header({ hrefName, href, locale }: HeaderProps) {
   const { isDark, toggle } = useTheme()
   return (
-    <header className="header">
+    <header className="flex justify-center h-14 relative w-full items-center">
       <Link href={href} locale={locale} passHref>
         <motion.a
           initial={{ opacity: 0, y: 100, scale: 1.5 }}
@@ -21,7 +21,7 @@ export function Header({ hrefName, href, locale }: HeaderProps) {
           transition={{ duration: 1 }}
           whileHover={{ opacity: 1, scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="btn-translate"
+          className="absolute right-0 z-10"
         >
           {hrefName}
         </motion.a>

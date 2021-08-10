@@ -7,15 +7,7 @@ type IDarkMode = {
 
 export function DarkModeButton({ isDark, toggle }: IDarkMode) {
   if (!isDark) {
-    return (
-      <div onClick={toggle}>
-        <RiSunLine size={40} />
-      </div>
-    )
+    return <RiSunLine size={40} onClick={toggle} />
   }
-  return (
-    <div onClick={toggle}>
-      <RiMoonLine size={40} />
-    </div>
-  )
+  return <RiMoonLine size={40} onClick={toggle} />
 }
