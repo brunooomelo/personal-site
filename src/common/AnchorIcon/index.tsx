@@ -11,7 +11,6 @@ export function AnchorIcon({ label, url, children }: AnchorProps) {
     <motion.a
       href={url}
       target="_blank"
-      className="box-social"
       rel="noreferrer"
       aria-label={label}
       initial={{ opacity: 0, y: -100 }}
