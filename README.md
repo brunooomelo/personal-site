@@ -2,5 +2,7 @@
 
 ### Stack
 
-- HTML5
-- CSS3
+- NextJS
+- TailwindCSS
+- I18n
+- Github Actions
